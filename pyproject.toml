@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "whispering"
+version = "0.1.0"
+description = "Audio Transcription API Service"
+authors = ["sugarforever <williiam.1022@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.6.1"
+langchain = "^0.0.352"
+python-dotenv = "^1.0.0"
+sqlalchemy = "^2.0.24"
+boto3 = "^1.34.10"
+openai-whisper = {git = "https://github.com/openai/whisper.git"}
+uvicorn = "^0.25.0"
+fastapi = "^0.108.0"
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
